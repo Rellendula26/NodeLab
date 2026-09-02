@@ -1,18 +1,30 @@
 @import "tailwindcss";
+@import "katex/dist/katex.min.css";
 
 @theme {
-  --color-lab-paper: #f3efe6;
-  --color-lab-panel: #fffcf7;
-  --color-lab-ink: #1c2d3f;
-  --color-lab-muted: #5c6b7a;
-  --color-lab-copper: #c45c26;
-  --color-lab-teal: #0f766e;
-  --color-lab-wire: #334e68;
-  --color-lab-line: #d7d0c4;
-  --color-lab-grid: #e6e0d4;
+  --color-bg: #f4f0e8;
+  --color-panel: #f8f4ec;
+  --color-cream: #ebe4d6;
+  --color-navy: #183153;
+  --color-steel: #426a8c;
+  --color-crimson: #a94848;
+  --color-muted: #687078;
+  --color-line: #d4cbb8;
+  --color-grid: #e6dfd0;
+  --color-success: #3d6b4f;
+  --color-wire: #2a4663;
+  --color-lab-paper: #f4f0e8;
+  --color-lab-panel: #f8f4ec;
+  --color-lab-ink: #183153;
+  --color-lab-muted: #687078;
+  --color-lab-copper: #a94848;
+  --color-lab-teal: #426a8c;
+  --color-lab-wire: #2a4663;
+  --color-lab-line: #d4cbb8;
+  --color-lab-grid: #e6dfd0;
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
-  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-serif: var(--font-source-serif), "Iowan Old Style", Palatino, Georgia, serif;
 }
 
 html,
@@ -21,10 +33,22 @@ body {
 }
 
 body {
-  background: var(--color-lab-paper);
-  color: var(--color-lab-ink);
+  background: var(--color-bg);
+  color: var(--color-navy);
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--color-lab-copper) 28%, white);
+  background: color-mix(in srgb, var(--color-crimson) 22%, white);
+}
+
+.katex {
+  font-size: 1.05em;
+  color: var(--color-navy);
+}
+
+.notebook-grid {
+  background-image:
+    linear-gradient(to right, var(--color-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
