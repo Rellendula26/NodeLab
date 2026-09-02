@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lab-paper: #f3efe6;
+  --color-lab-panel: #fffcf7;
+  --color-lab-ink: #1c2d3f;
+  --color-lab-muted: #5c6b7a;
+  --color-lab-copper: #c45c26;
+  --color-lab-teal: #0f766e;
+  --color-lab-wire: #334e68;
+  --color-lab-line: #d7d0c4;
+  --color-lab-grid: #e6e0d4;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: var(--color-lab-paper);
+  color: var(--color-lab-ink);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-lab-copper) 28%, white);
+}
