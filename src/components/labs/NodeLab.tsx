@@ -73,16 +73,12 @@ export function NodeLab() {
 
   return (
     <div className="flex min-h-screen flex-col bg-lab-paper text-lab-ink">
-      <header className="flex flex-wrap items-end justify-between gap-4 border-b border-lab-line px-5 py-4">
+      <header className="flex flex-wrap items-end justify-between gap-4 border-b border-lab-line px-5 py-3">
         <div>
           <p className="text-[11px] font-semibold tracking-[0.2em] text-lab-copper uppercase">
-            ESE 2150 · Concept lab
+            Node Explorer
           </p>
-          <h1 className="font-serif text-3xl tracking-tight">NodeLab</h1>
-        </div>
-        <div className="text-right">
-          <p className="font-mono text-xs text-lab-muted">Module 1</p>
-          <p className="text-sm">Find the electrical node, not the drawing.</p>
+          <h1 className="font-serif text-2xl tracking-tight">Find the electrical node, not the drawing</h1>
         </div>
       </header>
 
